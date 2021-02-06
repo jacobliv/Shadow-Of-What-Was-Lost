@@ -1,0 +1,20 @@
+﻿{
+  "grammarRules":[
+    {"key":"F","value":"+F-"},
+    {"key":"+","value":"-F"},
+    {"key":"-","value":"F+"}
+  ],
+  "behaviorRules":[
+    {"key":"F","value":"FORWARD"},
+    {"key":"+","value":"25D"},
+    {"key":"-","value":"-25D"},
+    {"key":".","value":""}
+  ],
+  "maxGenerations":5,
+  "maxSegmentLength":10,
+  "angleRandomness":true,
+  "angleRandomAmount": "5D",
+  "segmentLengthRandomness": false,
+  "segmentLengthRandomAmount": 0,
+  "axiom":"-F+"
+}

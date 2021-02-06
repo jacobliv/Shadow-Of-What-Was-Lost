@@ -1,0 +1,1192 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+    <PropertyGroup>
+        <TargetFramework>netcoreapp3.1</TargetFramework>
+
+        <IsPackable>false</IsPackable>
+    </PropertyGroup>
+
+    <ItemGroup>
+        <PackageReference Include="FluentAssertions" Version="6.0.0-alpha0002" />
+        <PackageReference Include="nunit" Version="3.12.0" />
+        <PackageReference Include="NUnit3TestAdapter" Version="3.15.1" />
+        <PackageReference Include="Microsoft.NET.Test.Sdk" Version="16.4.0" />
+    </ItemGroup>
+
+    <ItemGroup>
+      <Content Include="..\Assets\DebugGUI.meta">
+        <Link>Assets\DebugGUI.meta</Link>
+      </Content>
+      <Reference Include="UnityEngine">
+        <HintPath>C:/Program Files/Unity/Hub/Editor/2020.1.9f1/Editor/Data/Managed/UnityEngine/UnityEngine.dll</HintPath>
+      </Reference>
+      <Content Include="..\Assets\DebugGUI\Attributes.meta">
+        <Link>Assets\DebugGUI\Attributes.meta</Link>
+      </Content>
+      <Content Include="..\Assets\DebugGUI\Attributes\DebugGUIGraphAttribute.cs.meta">
+        <Link>Assets\DebugGUI\Attributes\DebugGUIGraphAttribute.cs.meta</Link>
+      </Content>
+      <Content Include="..\Assets\DebugGUI\Attributes\DebugGUIPrintAttribute.cs.meta">
+        <Link>Assets\DebugGUI\Attributes\DebugGUIPrintAttribute.cs.meta</Link>
+      </Content>
+      <Content Include="..\Assets\DebugGUI\DebugGUI.cs.meta">
+        <Link>Assets\DebugGUI\DebugGUI.cs.meta</Link>
+      </Content>
+      <Content Include="..\Assets\DebugGUI\Examples.meta">
+        <Link>Assets\DebugGUI\Examples.meta</Link>
+      </Content>
+      <Content Include="..\Assets\DebugGUI\Examples\DebugGUIExamples.cs.meta">
+        <Link>Assets\DebugGUI\Examples\DebugGUIExamples.cs.meta</Link>
+      </Content>
+      <Content Include="..\Assets\DebugGUI\Examples\DebugGUIExamples.unity">
+        <Link>Assets\DebugGUI\Examples\DebugGUIExamples.unity</Link>
+      </Content>
+      <Content Include="..\Assets\DebugGUI\Examples\DebugGUIExamples.unity.meta">
+        <Link>Assets\DebugGUI\Examples\DebugGUIExamples.unity.meta</Link>
+      </Content>
+      <Content Include="..\Assets\DebugGUI\Examples\DebugGUIExamplesSettings.lighting">
+        <Link>Assets\DebugGUI\Examples\DebugGUIExamplesSettings.lighting</Link>
+      </Content>
+      <Content Include="..\Assets\DebugGUI\Examples\DebugGUIExamplesSettings.lighting.meta">
+        <Link>Assets\DebugGUI\Examples\DebugGUIExamplesSettings.lighting.meta</Link>
+      </Content>
+      <Content Include="..\Assets\DebugGUI\README.txt">
+        <Link>Assets\DebugGUI\README.txt</Link>
+      </Content>
+      <Content Include="..\Assets\DebugGUI\README.txt.meta">
+        <Link>Assets\DebugGUI\README.txt.meta</Link>
+      </Content>
+      <Content Include="..\Assets\DIRT.png">
+        <Link>Assets\DIRT.png</Link>
+      </Content>
+      <Content Include="..\Assets\DIRT.png.meta">
+        <Link>Assets\DIRT.png.meta</Link>
+      </Content>
+      <Content Include="..\Assets\Grapher.meta">
+        <Link>Assets\Grapher.meta</Link>
+      </Content>
+      <Content Include="..\Assets\Grapher\Channel.cs.meta">
+        <Link>Assets\Grapher\Channel.cs.meta</Link>
+      </Content>
+      <Content Include="..\Assets\Grapher\Docs.meta">
+        <Link>Assets\Grapher\Docs.meta</Link>
+      </Content>
+      <Content Include="..\Assets\Grapher\Docs\Documentation.pdf">
+        <Link>Assets\Grapher\Docs\Documentation.pdf</Link>
+      </Content>
+      <Content Include="..\Assets\Grapher\Docs\Documentation.pdf.meta">
+        <Link>Assets\Grapher\Docs\Documentation.pdf.meta</Link>
+      </Content>
+      <Content Include="..\Assets\Grapher\Example.meta">
+        <Link>Assets\Grapher\Example.meta</Link>
+      </Content>
+      <Content Include="..\Assets\Grapher\Example\DataProvider.cs.meta">
+        <Link>Assets\Grapher\Example\DataProvider.cs.meta</Link>
+      </Content>
+      <Content Include="..\Assets\Grapher\Example\demo.unity">
+        <Link>Assets\Grapher\Example\demo.unity</Link>
+      </Content>
+      <Content Include="..\Assets\Grapher\Example\demo.unity.meta">
+        <Link>Assets\Grapher\Example\demo.unity.meta</Link>
+      </Content>
+      <Content Include="..\Assets\Grapher\Example\demoSettings.lighting">
+        <Link>Assets\Grapher\Example\demoSettings.lighting</Link>
+      </Content>
+      <Content Include="..\Assets\Grapher\Example\demoSettings.lighting.meta">
+        <Link>Assets\Grapher\Example\demoSettings.lighting.meta</Link>
+      </Content>
+      <Content Include="..\Assets\Grapher\FileHandler.cs.meta">
+        <Link>Assets\Grapher\FileHandler.cs.meta</Link>
+      </Content>
+      <Content Include="..\Assets\Grapher\Grapher.cs.meta">
+        <Link>Assets\Grapher\Grapher.cs.meta</Link>
+      </Content>
+      <Content Include="..\Assets\Grapher\Grapher.Draw.cs.meta">
+        <Link>Assets\Grapher\Grapher.Draw.cs.meta</Link>
+      </Content>
+      <Content Include="..\Assets\Grapher\Grapher.Replay.cs.meta">
+        <Link>Assets\Grapher\Grapher.Replay.cs.meta</Link>
+      </Content>
+      <Content Include="..\Assets\Grapher\GraphSettings.cs.meta">
+        <Link>Assets\Grapher\GraphSettings.cs.meta</Link>
+      </Content>
+      <Content Include="..\Assets\Grapher\Icons.meta">
+        <Link>Assets\Grapher\Icons.meta</Link>
+      </Content>
+      <Content Include="..\Assets\Grapher\Icons\resize.png">
+        <Link>Assets\Grapher\Icons\resize.png</Link>
+      </Content>
+      <Content Include="..\Assets\Grapher\Icons\resize.png.meta">
+        <Link>Assets\Grapher\Icons\resize.png.meta</Link>
+      </Content>
+      <Content Include="..\Assets\Grapher\Icons\save.png">
+        <Link>Assets\Grapher\Icons\save.png</Link>
+      </Content>
+      <Content Include="..\Assets\Grapher\Icons\save.png.meta">
+        <Link>Assets\Grapher\Icons\save.png.meta</Link>
+      </Content>
+      <Content Include="..\Assets\Grapher\Icons\terminal.png">
+        <Link>Assets\Grapher\Icons\terminal.png</Link>
+      </Content>
+      <Content Include="..\Assets\Grapher\Icons\terminal.png.meta">
+        <Link>Assets\Grapher\Icons\terminal.png.meta</Link>
+      </Content>
+      <Content Include="..\Assets\Grapher\Icons\view.png">
+        <Link>Assets\Grapher\Icons\view.png</Link>
+      </Content>
+      <Content Include="..\Assets\Grapher\Icons\view.png.meta">
+        <Link>Assets\Grapher\Icons\view.png.meta</Link>
+      </Content>
+      <Content Include="..\Assets\Grapher\IMPORTANT_README!.txt">
+        <Link>Assets\Grapher\IMPORTANT_README!.txt</Link>
+      </Content>
+      <Content Include="..\Assets\Grapher\IMPORTANT_README!.txt.meta">
+        <Link>Assets\Grapher\IMPORTANT_README!.txt.meta</Link>
+      </Content>
+      <Content Include="..\Assets\Grapher\OpenInFileBrowser.cs.meta">
+        <Link>Assets\Grapher\OpenInFileBrowser.cs.meta</Link>
+      </Content>
+      <Content Include="..\Assets\Grapher\Sample.cs.meta">
+        <Link>Assets\Grapher\Sample.cs.meta</Link>
+      </Content>
+      <Content Include="..\Assets\Grapher\SettingsWindow.cs.meta">
+        <Link>Assets\Grapher\SettingsWindow.cs.meta</Link>
+      </Content>
+      <Content Include="..\Assets\Grapher\TimeKeeper.cs.meta">
+        <Link>Assets\Grapher\TimeKeeper.cs.meta</Link>
+      </Content>
+      <Content Include="..\Assets\LSystem.meta">
+        <Link>Assets\LSystem.meta</Link>
+      </Content>
+      <Content Include="..\Assets\LSystem\Bush.mat">
+        <Link>Assets\LSystem\Bush.mat</Link>
+      </Content>
+      <Content Include="..\Assets\LSystem\Bush.mat.meta">
+        <Link>Assets\LSystem\Bush.mat.meta</Link>
+      </Content>
+      <Content Include="..\Assets\LSystem\LSystemRules.json">
+        <Link>Assets\LSystem\LSystemRules.json</Link>
+      </Content>
+      <Content Include="..\Assets\LSystem\LSystemRules.json.meta">
+        <Link>Assets\LSystem\LSystemRules.json.meta</Link>
+      </Content>
+      <Content Include="..\Assets\MapMaker icons.meta">
+        <Link>Assets\MapMaker icons.meta</Link>
+      </Content>
+      <Content Include="..\Assets\MapMaker icons\icons8-cursor-250.png">
+        <Link>Assets\MapMaker icons\icons8-cursor-250.png</Link>
+      </Content>
+      <Content Include="..\Assets\MapMaker icons\icons8-cursor-250.png.meta">
+        <Link>Assets\MapMaker icons\icons8-cursor-250.png.meta</Link>
+      </Content>
+      <Content Include="..\Assets\MapMaker icons\LineTool.png">
+        <Link>Assets\MapMaker icons\LineTool.png</Link>
+      </Content>
+      <Content Include="..\Assets\MapMaker icons\LineTool.png.meta">
+        <Link>Assets\MapMaker icons\LineTool.png.meta</Link>
+      </Content>
+      <Content Include="..\Assets\MapMaker icons\Pencil.png">
+        <Link>Assets\MapMaker icons\Pencil.png</Link>
+      </Content>
+      <Content Include="..\Assets\MapMaker icons\Pencil.png.meta">
+        <Link>Assets\MapMaker icons\Pencil.png.meta</Link>
+      </Content>
+      <Content Include="..\Assets\MapMaker icons\SquareSelectTool.png">
+        <Link>Assets\MapMaker icons\SquareSelectTool.png</Link>
+      </Content>
+      <Content Include="..\Assets\MapMaker icons\SquareSelectTool.png.meta">
+        <Link>Assets\MapMaker icons\SquareSelectTool.png.meta</Link>
+      </Content>
+      <Content Include="..\Assets\MapMaker icons\SquareTool.png">
+        <Link>Assets\MapMaker icons\SquareTool.png</Link>
+      </Content>
+      <Content Include="..\Assets\MapMaker icons\SquareTool.png.meta">
+        <Link>Assets\MapMaker icons\SquareTool.png.meta</Link>
+      </Content>
+      <Content Include="..\Assets\MapMaker icons\Wand Selection.png">
+        <Link>Assets\MapMaker icons\Wand Selection.png</Link>
+      </Content>
+      <Content Include="..\Assets\MapMaker icons\Wand Selection.png.meta">
+        <Link>Assets\MapMaker icons\Wand Selection.png.meta</Link>
+      </Content>
+      <Content Include="..\Assets\Materials.meta">
+        <Link>Assets\Materials.meta</Link>
+      </Content>
+      <Content Include="..\Assets\Materials\ChunkMaterial.mat">
+        <Link>Assets\Materials\ChunkMaterial.mat</Link>
+      </Content>
+      <Content Include="..\Assets\Materials\ChunkMaterial.mat.meta">
+        <Link>Assets\Materials\ChunkMaterial.mat.meta</Link>
+      </Content>
+      <Content Include="..\Assets\Materials\New Material.mat">
+        <Link>Assets\Materials\New Material.mat</Link>
+      </Content>
+      <Content Include="..\Assets\Materials\New Material.mat.meta">
+        <Link>Assets\Materials\New Material.mat.meta</Link>
+      </Content>
+      <Content Include="..\Assets\Materials\VertexShader-Material.shader">
+        <Link>Assets\Materials\VertexShader-Material.shader</Link>
+      </Content>
+      <Content Include="..\Assets\Materials\VertexShader-Material.shader.meta">
+        <Link>Assets\Materials\VertexShader-Material.shader.meta</Link>
+      </Content>
+      <Content Include="..\Assets\modularCsv.meta">
+        <Link>Assets\modularCsv.meta</Link>
+      </Content>
+      <Content Include="..\Assets\modularCsv\matters.csv">
+        <Link>Assets\modularCsv\matters.csv</Link>
+      </Content>
+      <Content Include="..\Assets\modularCsv\matters.csv.meta">
+        <Link>Assets\modularCsv\matters.csv.meta</Link>
+      </Content>
+      <Content Include="..\Assets\PlayerAnimator.controller">
+        <Link>Assets\PlayerAnimator.controller</Link>
+      </Content>
+      <Content Include="..\Assets\PlayerAnimator.controller.meta">
+        <Link>Assets\PlayerAnimator.controller.meta</Link>
+      </Content>
+      <Content Include="..\Assets\Prefabs.meta">
+        <Link>Assets\Prefabs.meta</Link>
+      </Content>
+      <Content Include="..\Assets\Prefabs\Chunk.prefab">
+        <Link>Assets\Prefabs\Chunk.prefab</Link>
+      </Content>
+      <Content Include="..\Assets\Prefabs\Chunk.prefab.meta">
+        <Link>Assets\Prefabs\Chunk.prefab.meta</Link>
+      </Content>
+      <Content Include="..\Assets\Prefabs\Chunks.prefab">
+        <Link>Assets\Prefabs\Chunks.prefab</Link>
+      </Content>
+      <Content Include="..\Assets\Prefabs\Chunks.prefab.meta">
+        <Link>Assets\Prefabs\Chunks.prefab.meta</Link>
+      </Content>
+      <Content Include="..\Assets\Prefabs\GameManager.prefab">
+        <Link>Assets\Prefabs\GameManager.prefab</Link>
+      </Content>
+      <Content Include="..\Assets\Prefabs\GameManager.prefab.meta">
+        <Link>Assets\Prefabs\GameManager.prefab.meta</Link>
+      </Content>
+      <Content Include="..\Assets\Prefabs\MeshGenerator.prefab">
+        <Link>Assets\Prefabs\MeshGenerator.prefab</Link>
+      </Content>
+      <Content Include="..\Assets\Prefabs\MeshGenerator.prefab.meta">
+        <Link>Assets\Prefabs\MeshGenerator.prefab.meta</Link>
+      </Content>
+      <Content Include="..\Assets\Scenes.meta">
+        <Link>Assets\Scenes.meta</Link>
+      </Content>
+      <Content Include="..\Assets\Scenes\DungeonMaker.unity">
+        <Link>Assets\Scenes\DungeonMaker.unity</Link>
+      </Content>
+      <Content Include="..\Assets\Scenes\DungeonMaker.unity.meta">
+        <Link>Assets\Scenes\DungeonMaker.unity.meta</Link>
+      </Content>
+      <Content Include="..\Assets\Scenes\Main Game.unity">
+        <Link>Assets\Scenes\Main Game.unity</Link>
+      </Content>
+      <Content Include="..\Assets\Scenes\Main Game.unity.meta">
+        <Link>Assets\Scenes\Main Game.unity.meta</Link>
+      </Content>
+      <Content Include="..\Assets\Scripts.meta">
+        <Link>Assets\Scripts.meta</Link>
+      </Content>
+      <Content Include="..\Assets\Scripts\DungeonMaker.meta">
+        <Link>Assets\Scripts\DungeonMaker.meta</Link>
+      </Content>
+      <Content Include="..\Assets\Scripts\DungeonMaker\DrawGrid.cs.meta">
+        <Link>Assets\Scripts\DungeonMaker\DrawGrid.cs.meta</Link>
+      </Content>
+      <Content Include="..\Assets\Scripts\DungeonMaker\GridCreator.cs.meta">
+        <Link>Assets\Scripts\DungeonMaker\GridCreator.cs.meta</Link>
+      </Content>
+      <Content Include="..\Assets\Scripts\DungeonMaker\ResizeGrid.cs.meta">
+        <Link>Assets\Scripts\DungeonMaker\ResizeGrid.cs.meta</Link>
+      </Content>
+      <Content Include="..\Assets\Scripts\DungeonMaker\SetCanvasDefaults.cs.meta">
+        <Link>Assets\Scripts\DungeonMaker\SetCanvasDefaults.cs.meta</Link>
+      </Content>
+      <Content Include="..\Assets\Scripts\DungeonMaker\SlideInOut.cs.meta">
+        <Link>Assets\Scripts\DungeonMaker\SlideInOut.cs.meta</Link>
+      </Content>
+      <Content Include="..\Assets\Scripts\DungeonMaker\ToolType.cs.meta">
+        <Link>Assets\Scripts\DungeonMaker\ToolType.cs.meta</Link>
+      </Content>
+      <Content Include="..\Assets\Scripts\MainGame.meta">
+        <Link>Assets\Scripts\MainGame.meta</Link>
+      </Content>
+      <Content Include="..\Assets\Scripts\MainGame\Character.meta">
+        <Link>Assets\Scripts\MainGame\Character.meta</Link>
+      </Content>
+      <Content Include="..\Assets\Scripts\MainGame\Character\Camera.meta">
+        <Link>Assets\Scripts\MainGame\Character\Camera.meta</Link>
+      </Content>
+      <Content Include="..\Assets\Scripts\MainGame\Character\Camera\FollowCharacter.cs.meta">
+        <Link>Assets\Scripts\MainGame\Character\Camera\FollowCharacter.cs.meta</Link>
+      </Content>
+      <Content Include="..\Assets\Scripts\MainGame\Character\CharacterJump.cs.meta">
+        <Link>Assets\Scripts\MainGame\Character\CharacterJump.cs.meta</Link>
+      </Content>
+      <Content Include="..\Assets\Scripts\MainGame\Character\Movement.meta">
+        <Link>Assets\Scripts\MainGame\Character\Movement.meta</Link>
+      </Content>
+      <Content Include="..\Assets\Scripts\MainGame\Character\Movement\Interpolate.cs.meta">
+        <Link>Assets\Scripts\MainGame\Character\Movement\Interpolate.cs.meta</Link>
+      </Content>
+      <Content Include="..\Assets\Scripts\MainGame\Character\States.meta">
+        <Link>Assets\Scripts\MainGame\Character\States.meta</Link>
+      </Content>
+      <Content Include="..\Assets\Scripts\MainGame\Character\States\Idle.cs.meta">
+        <Link>Assets\Scripts\MainGame\Character\States\Idle.cs.meta</Link>
+      </Content>
+      <Content Include="..\Assets\Scripts\MainGame\Character\States\Kick.cs.meta">
+        <Link>Assets\Scripts\MainGame\Character\States\Kick.cs.meta</Link>
+      </Content>
+      <Content Include="..\Assets\Scripts\MainGame\Character\States\MOVE.cs.meta">
+        <Link>Assets\Scripts\MainGame\Character\States\MOVE.cs.meta</Link>
+      </Content>
+      <Content Include="..\Assets\Scripts\MainGame\GameManager.cs.meta">
+        <Link>Assets\Scripts\MainGame\GameManager.cs.meta</Link>
+      </Content>
+      <Content Include="..\Assets\Scripts\MainGame\ProceduralBushes.meta">
+        <Link>Assets\Scripts\MainGame\ProceduralBushes.meta</Link>
+      </Content>
+      <Content Include="..\Assets\Scripts\MainGame\ProceduralBushes\Inverse Kinematics.meta">
+        <Link>Assets\Scripts\MainGame\ProceduralBushes\Inverse Kinematics.meta</Link>
+      </Content>
+      <Content Include="..\Assets\Scripts\MainGame\ProceduralBushes\Inverse Kinematics\InverseKinematicBranchLimbCreator.cs.meta">
+        <Link>Assets\Scripts\MainGame\ProceduralBushes\Inverse Kinematics\InverseKinematicBranchLimbCreator.cs.meta</Link>
+      </Content>
+      <Content Include="..\Assets\Scripts\MainGame\ProceduralBushes\Inverse Kinematics\InverseKinematics.cs.meta">
+        <Link>Assets\Scripts\MainGame\ProceduralBushes\Inverse Kinematics\InverseKinematics.cs.meta</Link>
+      </Content>
+      <Content Include="..\Assets\Scripts\MainGame\ProceduralBushes\Inverse Kinematics\InverseKinematicUnit.cs.meta">
+        <Link>Assets\Scripts\MainGame\ProceduralBushes\Inverse Kinematics\InverseKinematicUnit.cs.meta</Link>
+      </Content>
+      <Content Include="..\Assets\Scripts\MainGame\ProceduralBushes\Inverse Kinematics\Limb.cs.meta">
+        <Link>Assets\Scripts\MainGame\ProceduralBushes\Inverse Kinematics\Limb.cs.meta</Link>
+      </Content>
+      <Content Include="..\Assets\Scripts\MainGame\ProceduralBushes\LSystem.meta">
+        <Link>Assets\Scripts\MainGame\ProceduralBushes\LSystem.meta</Link>
+      </Content>
+      <Content Include="..\Assets\Scripts\MainGame\ProceduralBushes\LSystem\GrammarGenerator.cs.meta">
+        <Link>Assets\Scripts\MainGame\ProceduralBushes\LSystem\GrammarGenerator.cs.meta</Link>
+      </Content>
+      <Content Include="..\Assets\Scripts\MainGame\ProceduralBushes\LSystem\GrammarNode.cs.meta">
+        <Link>Assets\Scripts\MainGame\ProceduralBushes\LSystem\GrammarNode.cs.meta</Link>
+      </Content>
+      <Content Include="..\Assets\Scripts\MainGame\ProceduralBushes\LSystem\LNode.cs.meta">
+        <Link>Assets\Scripts\MainGame\ProceduralBushes\LSystem\LNode.cs.meta</Link>
+      </Content>
+      <Content Include="..\Assets\Scripts\MainGame\ProceduralBushes\LSystem\LSystemGenerator.cs.meta">
+        <Link>Assets\Scripts\MainGame\ProceduralBushes\LSystem\LSystemGenerator.cs.meta</Link>
+      </Content>
+      <Content Include="..\Assets\Scripts\MainGame\ProceduralBushes\LSystem\LSystemRules.cs.meta">
+        <Link>Assets\Scripts\MainGame\ProceduralBushes\LSystem\LSystemRules.cs.meta</Link>
+      </Content>
+      <Content Include="..\Assets\Scripts\MainGame\ProceduralBushes\LSystem\NodeBehaviorGenerator.cs.meta">
+        <Link>Assets\Scripts\MainGame\ProceduralBushes\LSystem\NodeBehaviorGenerator.cs.meta</Link>
+      </Content>
+      <Content Include="..\Assets\Scripts\MainGame\ProceduralBushes\LSystem\Rule.cs.meta">
+        <Link>Assets\Scripts\MainGame\ProceduralBushes\LSystem\Rule.cs.meta</Link>
+      </Content>
+      <Content Include="..\Assets\Scripts\MainGame\ProceduralBushes\Mesh.meta">
+        <Link>Assets\Scripts\MainGame\ProceduralBushes\Mesh.meta</Link>
+      </Content>
+      <Content Include="..\Assets\Scripts\MainGame\ProceduralBushes\Mesh\Branch.cs.meta">
+        <Link>Assets\Scripts\MainGame\ProceduralBushes\Mesh\Branch.cs.meta</Link>
+      </Content>
+      <Content Include="..\Assets\Scripts\MainGame\ProceduralBushes\Mesh\Bush.cs.meta">
+        <Link>Assets\Scripts\MainGame\ProceduralBushes\Mesh\Bush.cs.meta</Link>
+      </Content>
+      <Content Include="..\Assets\Scripts\MainGame\ProceduralBushes\Mesh\BushCreator.cs.meta">
+        <Link>Assets\Scripts\MainGame\ProceduralBushes\Mesh\BushCreator.cs.meta</Link>
+      </Content>
+      <Content Include="..\Assets\Scripts\MainGame\ProceduralBushes\Mesh\BushMeshCreator.cs.meta">
+        <Link>Assets\Scripts\MainGame\ProceduralBushes\Mesh\BushMeshCreator.cs.meta</Link>
+      </Content>
+      <Content Include="..\Assets\Scripts\MainGame\Terrain.meta">
+        <Link>Assets\Scripts\MainGame\Terrain.meta</Link>
+      </Content>
+      <Content Include="..\Assets\Scripts\MainGame\Terrain\Chunk.meta">
+        <Link>Assets\Scripts\MainGame\Terrain\Chunk.meta</Link>
+      </Content>
+      <Content Include="..\Assets\Scripts\MainGame\Terrain\Chunk\ChunkBackgroundResizer.cs.meta">
+        <Link>Assets\Scripts\MainGame\Terrain\Chunk\ChunkBackgroundResizer.cs.meta</Link>
+      </Content>
+      <Content Include="..\Assets\Scripts\MainGame\Terrain\Chunk\ChunkManager.cs.meta">
+        <Link>Assets\Scripts\MainGame\Terrain\Chunk\ChunkManager.cs.meta</Link>
+      </Content>
+      <Content Include="..\Assets\Scripts\MainGame\Terrain\Chunk\ChunksManager.cs.meta">
+        <Link>Assets\Scripts\MainGame\Terrain\Chunk\ChunksManager.cs.meta</Link>
+      </Content>
+      <Content Include="..\Assets\Scripts\MainGame\Terrain\Chunk\ColliderCreator.cs.meta">
+        <Link>Assets\Scripts\MainGame\Terrain\Chunk\ColliderCreator.cs.meta</Link>
+      </Content>
+      <Content Include="..\Assets\Scripts\MainGame\Terrain\Generation.meta">
+        <Link>Assets\Scripts\MainGame\Terrain\Generation.meta</Link>
+      </Content>
+      <Content Include="..\Assets\Scripts\MainGame\Terrain\Generation\AdjacentDataCollector.cs.meta">
+        <Link>Assets\Scripts\MainGame\Terrain\Generation\AdjacentDataCollector.cs.meta</Link>
+      </Content>
+      <Content Include="..\Assets\Scripts\MainGame\Terrain\Generation\AdjacentType.cs.meta">
+        <Link>Assets\Scripts\MainGame\Terrain\Generation\AdjacentType.cs.meta</Link>
+      </Content>
+      <Content Include="..\Assets\Scripts\MainGame\Terrain\Generation\AutomataDebugRenderer.cs.meta">
+        <Link>Assets\Scripts\MainGame\Terrain\Generation\AutomataDebugRenderer.cs.meta</Link>
+      </Content>
+      <Content Include="..\Assets\Scripts\MainGame\Terrain\Generation\CellularAutomata.cs.meta">
+        <Link>Assets\Scripts\MainGame\Terrain\Generation\CellularAutomata.cs.meta</Link>
+      </Content>
+      <Content Include="..\Assets\Scripts\MainGame\Terrain\Generation\ControlNode.cs.meta">
+        <Link>Assets\Scripts\MainGame\Terrain\Generation\ControlNode.cs.meta</Link>
+      </Content>
+      <Content Include="..\Assets\Scripts\MainGame\Terrain\Generation\ControlNodeCreator.cs.meta">
+        <Link>Assets\Scripts\MainGame\Terrain\Generation\ControlNodeCreator.cs.meta</Link>
+      </Content>
+      <Content Include="..\Assets\Scripts\MainGame\Terrain\Generation\ExternalEdge.cs.meta">
+        <Link>Assets\Scripts\MainGame\Terrain\Generation\ExternalEdge.cs.meta</Link>
+      </Content>
+      <Content Include="..\Assets\Scripts\MainGame\Terrain\Generation\ExternalEdgeDetector.cs.meta">
+        <Link>Assets\Scripts\MainGame\Terrain\Generation\ExternalEdgeDetector.cs.meta</Link>
+      </Content>
+      <Content Include="..\Assets\Scripts\MainGame\Terrain\Generation\ExternalEdgeType.cs.meta">
+        <Link>Assets\Scripts\MainGame\Terrain\Generation\ExternalEdgeType.cs.meta</Link>
+      </Content>
+      <Content Include="..\Assets\Scripts\MainGame\Terrain\Generation\GenerationData.cs.meta">
+        <Link>Assets\Scripts\MainGame\Terrain\Generation\GenerationData.cs.meta</Link>
+      </Content>
+      <Content Include="..\Assets\Scripts\MainGame\Terrain\Generation\MeshGenerator.cs.meta">
+        <Link>Assets\Scripts\MainGame\Terrain\Generation\MeshGenerator.cs.meta</Link>
+      </Content>
+      <Content Include="..\Assets\Scripts\MainGame\Terrain\Generation\Node.cs.meta">
+        <Link>Assets\Scripts\MainGame\Terrain\Generation\Node.cs.meta</Link>
+      </Content>
+      <Content Include="..\Assets\Scripts\MainGame\Terrain\Generation\Square.cs.meta">
+        <Link>Assets\Scripts\MainGame\Terrain\Generation\Square.cs.meta</Link>
+      </Content>
+      <Content Include="..\Assets\Scripts\MainGame\Terrain\Generation\SquareConfig.cs.meta">
+        <Link>Assets\Scripts\MainGame\Terrain\Generation\SquareConfig.cs.meta</Link>
+      </Content>
+      <Content Include="..\Assets\Scripts\MainGame\Terrain\Generation\SquareConfiguration.cs.meta">
+        <Link>Assets\Scripts\MainGame\Terrain\Generation\SquareConfiguration.cs.meta</Link>
+      </Content>
+      <Content Include="..\Assets\Scripts\MainGame\Terrain\Generation\SquareCreator.cs.meta">
+        <Link>Assets\Scripts\MainGame\Terrain\Generation\SquareCreator.cs.meta</Link>
+      </Content>
+      <Content Include="..\Assets\Scripts\MainGame\Terrain\Generation\TerrainDestroyer.cs.meta">
+        <Link>Assets\Scripts\MainGame\Terrain\Generation\TerrainDestroyer.cs.meta</Link>
+      </Content>
+      <Content Include="..\Assets\Scripts\MainGame\Terrain\Generation\TerrainMatter.cs.meta">
+        <Link>Assets\Scripts\MainGame\Terrain\Generation\TerrainMatter.cs.meta</Link>
+      </Content>
+      <Content Include="..\Assets\Scripts\MainGame\Terrain\Generation\TerrainType.cs.meta">
+        <Link>Assets\Scripts\MainGame\Terrain\Generation\TerrainType.cs.meta</Link>
+      </Content>
+      <Content Include="..\Assets\Scripts\MainGame\Terrain\Matters.meta">
+        <Link>Assets\Scripts\MainGame\Terrain\Matters.meta</Link>
+      </Content>
+      <Content Include="..\Assets\Scripts\MainGame\Terrain\Matters\Matter.cs.meta">
+        <Link>Assets\Scripts\MainGame\Terrain\Matters\Matter.cs.meta</Link>
+      </Content>
+      <Content Include="..\Assets\Scripts\MainGame\Terrain\Matters\MatterCSVReader.cs.meta">
+        <Link>Assets\Scripts\MainGame\Terrain\Matters\MatterCSVReader.cs.meta</Link>
+      </Content>
+      <Content Include="..\Assets\Scripts\MainGame\Terrain\Mesh.meta">
+        <Link>Assets\Scripts\MainGame\Terrain\Mesh.meta</Link>
+      </Content>
+      <Content Include="..\Assets\Scripts\MainGame\Terrain\Mesh\MeshTriangle.cs.meta">
+        <Link>Assets\Scripts\MainGame\Terrain\Mesh\MeshTriangle.cs.meta</Link>
+      </Content>
+      <Content Include="..\Assets\Scripts\MainGame\Terrain\Mesh\MeshTriangleUVCoord.cs.meta">
+        <Link>Assets\Scripts\MainGame\Terrain\Mesh\MeshTriangleUVCoord.cs.meta</Link>
+      </Content>
+      <Content Include="..\Assets\Scripts\MainGame\Terrain\Mesh\MeshTriangleUVCoordMap.cs.meta">
+        <Link>Assets\Scripts\MainGame\Terrain\Mesh\MeshTriangleUVCoordMap.cs.meta</Link>
+      </Content>
+      <Content Include="..\Assets\Scripts\MainGame\Terrain\Mesh\TerrainUVMapper.cs.meta">
+        <Link>Assets\Scripts\MainGame\Terrain\Mesh\TerrainUVMapper.cs.meta</Link>
+      </Content>
+      <Content Include="..\Assets\Scripts\MainGame\Terrain\Mesh\Triangle.cs.meta">
+        <Link>Assets\Scripts\MainGame\Terrain\Mesh\Triangle.cs.meta</Link>
+      </Content>
+      <Content Include="..\Assets\Scripts\MainGame\Terrain\Mesh\TriangleType.cs.meta">
+        <Link>Assets\Scripts\MainGame\Terrain\Mesh\TriangleType.cs.meta</Link>
+      </Content>
+      <Content Include="..\Assets\Scripts\MainGame\Terrain\Mesh\Triangulator.cs.meta">
+        <Link>Assets\Scripts\MainGame\Terrain\Mesh\Triangulator.cs.meta</Link>
+      </Content>
+      <Content Include="..\Assets\Scripts\Utils.meta">
+        <Link>Assets\Scripts\Utils.meta</Link>
+      </Content>
+      <Content Include="..\Assets\Scripts\Utils\Bounds.cs.meta">
+        <Link>Assets\Scripts\Utils\Bounds.cs.meta</Link>
+      </Content>
+      <Content Include="..\Assets\Scripts\Utils\centerCamera.cs.meta">
+        <Link>Assets\Scripts\Utils\centerCamera.cs.meta</Link>
+      </Content>
+      <Content Include="..\Assets\Scripts\Utils\Margin.cs.meta">
+        <Link>Assets\Scripts\Utils\Margin.cs.meta</Link>
+      </Content>
+      <Content Include="..\Assets\Scripts\Utils\Optional.cs.meta">
+        <Link>Assets\Scripts\Utils\Optional.cs.meta</Link>
+      </Content>
+      <Content Include="..\Assets\Shaders.meta">
+        <Link>Assets\Shaders.meta</Link>
+      </Content>
+      <Content Include="..\Assets\Shaders\NewUnlitShader.shader">
+        <Link>Assets\Shaders\NewUnlitShader.shader</Link>
+      </Content>
+      <Content Include="..\Assets\Shaders\NewUnlitShader.shader.meta">
+        <Link>Assets\Shaders\NewUnlitShader.shader.meta</Link>
+      </Content>
+      <Content Include="..\Assets\Sprites.meta">
+        <Link>Assets\Sprites.meta</Link>
+      </Content>
+      <Content Include="..\Assets\Sprites\Body.meta">
+        <Link>Assets\Sprites\Body.meta</Link>
+      </Content>
+      <Content Include="..\Assets\Sprites\Body\Character Sprite Sheet 1.png">
+        <Link>Assets\Sprites\Body\Character Sprite Sheet 1.png</Link>
+      </Content>
+      <Content Include="..\Assets\Sprites\Body\Character Sprite Sheet 1.png.meta">
+        <Link>Assets\Sprites\Body\Character Sprite Sheet 1.png.meta</Link>
+      </Content>
+      <Content Include="..\Assets\Sprites\Body\Character Sprite Sheet.png">
+        <Link>Assets\Sprites\Body\Character Sprite Sheet.png</Link>
+      </Content>
+      <Content Include="..\Assets\Sprites\Body\Character Sprite Sheet.png.meta">
+        <Link>Assets\Sprites\Body\Character Sprite Sheet.png.meta</Link>
+      </Content>
+      <Content Include="..\Assets\UltimateVertexColorShaders.meta">
+        <Link>Assets\UltimateVertexColorShaders.meta</Link>
+      </Content>
+      <Content Include="..\Assets\UltimateVertexColorShaders\Documentation.meta">
+        <Link>Assets\UltimateVertexColorShaders\Documentation.meta</Link>
+      </Content>
+      <Content Include="..\Assets\UltimateVertexColorShaders\Documentation\UVCS_StandardShader.pdf">
+        <Link>Assets\UltimateVertexColorShaders\Documentation\UVCS_StandardShader.pdf</Link>
+      </Content>
+      <Content Include="..\Assets\UltimateVertexColorShaders\Documentation\UVCS_StandardShader.pdf.meta">
+        <Link>Assets\UltimateVertexColorShaders\Documentation\UVCS_StandardShader.pdf.meta</Link>
+      </Content>
+      <Content Include="..\Assets\UltimateVertexColorShaders\Materials.meta">
+        <Link>Assets\UltimateVertexColorShaders\Materials.meta</Link>
+      </Content>
+      <Content Include="..\Assets\UltimateVertexColorShaders\Materials\FadeWithHalfAlpha.mat">
+        <Link>Assets\UltimateVertexColorShaders\Materials\FadeWithHalfAlpha.mat</Link>
+      </Content>
+      <Content Include="..\Assets\UltimateVertexColorShaders\Materials\FadeWithHalfAlpha.mat.meta">
+        <Link>Assets\UltimateVertexColorShaders\Materials\FadeWithHalfAlpha.mat.meta</Link>
+      </Content>
+      <Content Include="..\Assets\UltimateVertexColorShaders\Materials\FadeWithHalfAlphaAndBlueEmission.mat">
+        <Link>Assets\UltimateVertexColorShaders\Materials\FadeWithHalfAlphaAndBlueEmission.mat</Link>
+      </Content>
+      <Content Include="..\Assets\UltimateVertexColorShaders\Materials\FadeWithHalfAlphaAndBlueEmission.mat.meta">
+        <Link>Assets\UltimateVertexColorShaders\Materials\FadeWithHalfAlphaAndBlueEmission.mat.meta</Link>
+      </Content>
+      <Content Include="..\Assets\UltimateVertexColorShaders\Materials\FadeWithHalfAlphaAndEmission.mat">
+        <Link>Assets\UltimateVertexColorShaders\Materials\FadeWithHalfAlphaAndEmission.mat</Link>
+      </Content>
+      <Content Include="..\Assets\UltimateVertexColorShaders\Materials\FadeWithHalfAlphaAndEmission.mat.meta">
+        <Link>Assets\UltimateVertexColorShaders\Materials\FadeWithHalfAlphaAndEmission.mat.meta</Link>
+      </Content>
+      <Content Include="..\Assets\UltimateVertexColorShaders\Materials\FadeWithZeroAlpha.mat">
+        <Link>Assets\UltimateVertexColorShaders\Materials\FadeWithZeroAlpha.mat</Link>
+      </Content>
+      <Content Include="..\Assets\UltimateVertexColorShaders\Materials\FadeWithZeroAlpha.mat.meta">
+        <Link>Assets\UltimateVertexColorShaders\Materials\FadeWithZeroAlpha.mat.meta</Link>
+      </Content>
+      <Content Include="..\Assets\UltimateVertexColorShaders\Materials\OpaqueWithBlueEmission.mat">
+        <Link>Assets\UltimateVertexColorShaders\Materials\OpaqueWithBlueEmission.mat</Link>
+      </Content>
+      <Content Include="..\Assets\UltimateVertexColorShaders\Materials\OpaqueWithBlueEmission.mat.meta">
+        <Link>Assets\UltimateVertexColorShaders\Materials\OpaqueWithBlueEmission.mat.meta</Link>
+      </Content>
+      <Content Include="..\Assets\UltimateVertexColorShaders\Materials\OpaqueWithEmission.mat">
+        <Link>Assets\UltimateVertexColorShaders\Materials\OpaqueWithEmission.mat</Link>
+      </Content>
+      <Content Include="..\Assets\UltimateVertexColorShaders\Materials\OpaqueWithEmission.mat.meta">
+        <Link>Assets\UltimateVertexColorShaders\Materials\OpaqueWithEmission.mat.meta</Link>
+      </Content>
+      <Content Include="..\Assets\UltimateVertexColorShaders\Materials\OpaqueWithFullSmoothness.mat">
+        <Link>Assets\UltimateVertexColorShaders\Materials\OpaqueWithFullSmoothness.mat</Link>
+      </Content>
+      <Content Include="..\Assets\UltimateVertexColorShaders\Materials\OpaqueWithFullSmoothness.mat.meta">
+        <Link>Assets\UltimateVertexColorShaders\Materials\OpaqueWithFullSmoothness.mat.meta</Link>
+      </Content>
+      <Content Include="..\Assets\UltimateVertexColorShaders\Materials\OpaqueWithHalfSmoothness.mat">
+        <Link>Assets\UltimateVertexColorShaders\Materials\OpaqueWithHalfSmoothness.mat</Link>
+      </Content>
+      <Content Include="..\Assets\UltimateVertexColorShaders\Materials\OpaqueWithHalfSmoothness.mat.meta">
+        <Link>Assets\UltimateVertexColorShaders\Materials\OpaqueWithHalfSmoothness.mat.meta</Link>
+      </Content>
+      <Content Include="..\Assets\UltimateVertexColorShaders\Materials\OpaqueWithHighAlbedo.mat">
+        <Link>Assets\UltimateVertexColorShaders\Materials\OpaqueWithHighAlbedo.mat</Link>
+      </Content>
+      <Content Include="..\Assets\UltimateVertexColorShaders\Materials\OpaqueWithHighAlbedo.mat.meta">
+        <Link>Assets\UltimateVertexColorShaders\Materials\OpaqueWithHighAlbedo.mat.meta</Link>
+      </Content>
+      <Content Include="..\Assets\UltimateVertexColorShaders\Materials\OpaqueWithHigherMetal.mat">
+        <Link>Assets\UltimateVertexColorShaders\Materials\OpaqueWithHigherMetal.mat</Link>
+      </Content>
+      <Content Include="..\Assets\UltimateVertexColorShaders\Materials\OpaqueWithHigherMetal.mat.meta">
+        <Link>Assets\UltimateVertexColorShaders\Materials\OpaqueWithHigherMetal.mat.meta</Link>
+      </Content>
+      <Content Include="..\Assets\UltimateVertexColorShaders\Materials\OpaqueWithLowAlbedo.mat">
+        <Link>Assets\UltimateVertexColorShaders\Materials\OpaqueWithLowAlbedo.mat</Link>
+      </Content>
+      <Content Include="..\Assets\UltimateVertexColorShaders\Materials\OpaqueWithLowAlbedo.mat.meta">
+        <Link>Assets\UltimateVertexColorShaders\Materials\OpaqueWithLowAlbedo.mat.meta</Link>
+      </Content>
+      <Content Include="..\Assets\UltimateVertexColorShaders\Materials\Standard.mat">
+        <Link>Assets\UltimateVertexColorShaders\Materials\Standard.mat</Link>
+      </Content>
+      <Content Include="..\Assets\UltimateVertexColorShaders\Materials\Standard.mat.meta">
+        <Link>Assets\UltimateVertexColorShaders\Materials\Standard.mat.meta</Link>
+      </Content>
+      <Content Include="..\Assets\UltimateVertexColorShaders\Materials\TransparentWithHalfAlpha.mat">
+        <Link>Assets\UltimateVertexColorShaders\Materials\TransparentWithHalfAlpha.mat</Link>
+      </Content>
+      <Content Include="..\Assets\UltimateVertexColorShaders\Materials\TransparentWithHalfAlpha.mat.meta">
+        <Link>Assets\UltimateVertexColorShaders\Materials\TransparentWithHalfAlpha.mat.meta</Link>
+      </Content>
+      <Content Include="..\Assets\UltimateVertexColorShaders\Materials\TransparentWithHalfAlphaAndBlueEmission.mat">
+        <Link>Assets\UltimateVertexColorShaders\Materials\TransparentWithHalfAlphaAndBlueEmission.mat</Link>
+      </Content>
+      <Content Include="..\Assets\UltimateVertexColorShaders\Materials\TransparentWithHalfAlphaAndBlueEmission.mat.meta">
+        <Link>Assets\UltimateVertexColorShaders\Materials\TransparentWithHalfAlphaAndBlueEmission.mat.meta</Link>
+      </Content>
+      <Content Include="..\Assets\UltimateVertexColorShaders\Materials\TransparentWithZeroAlpha.mat">
+        <Link>Assets\UltimateVertexColorShaders\Materials\TransparentWithZeroAlpha.mat</Link>
+      </Content>
+      <Content Include="..\Assets\UltimateVertexColorShaders\Materials\TransparentWithZeroAlpha.mat.meta">
+        <Link>Assets\UltimateVertexColorShaders\Materials\TransparentWithZeroAlpha.mat.meta</Link>
+      </Content>
+      <Content Include="..\Assets\UltimateVertexColorShaders\Materials\TransparentWithZeroAlphaAndBlueEmission.mat">
+        <Link>Assets\UltimateVertexColorShaders\Materials\TransparentWithZeroAlphaAndBlueEmission.mat</Link>
+      </Content>
+      <Content Include="..\Assets\UltimateVertexColorShaders\Materials\TransparentWithZeroAlphaAndBlueEmission.mat.meta">
+        <Link>Assets\UltimateVertexColorShaders\Materials\TransparentWithZeroAlphaAndBlueEmission.mat.meta</Link>
+      </Content>
+      <Content Include="..\Assets\UltimateVertexColorShaders\Shaders.meta">
+        <Link>Assets\UltimateVertexColorShaders\Shaders.meta</Link>
+      </Content>
+      <Content Include="..\Assets\UltimateVertexColorShaders\Shaders\Standard.shader">
+        <Link>Assets\UltimateVertexColorShaders\Shaders\Standard.shader</Link>
+      </Content>
+      <Content Include="..\Assets\UltimateVertexColorShaders\Shaders\Standard.shader.meta">
+        <Link>Assets\UltimateVertexColorShaders\Shaders\Standard.shader.meta</Link>
+      </Content>
+      <Content Include="..\Assets\UltimateVertexColorShaders\Shaders\UVCS_StandardShaderGUI.cs.meta">
+        <Link>Assets\UltimateVertexColorShaders\Shaders\UVCS_StandardShaderGUI.cs.meta</Link>
+      </Content>
+    </ItemGroup>
+
+    <ItemGroup>
+      <Compile Include="..\Assets\DebugGUI\Attributes\DebugGUIGraphAttribute.cs">
+        <Link>Assets\DebugGUI\Attributes\DebugGUIGraphAttribute.cs</Link>
+      </Compile>
+      <Compile Include="..\Assets\DebugGUI\Attributes\DebugGUIPrintAttribute.cs">
+        <Link>Assets\DebugGUI\Attributes\DebugGUIPrintAttribute.cs</Link>
+      </Compile>
+      <Compile Include="..\Assets\DebugGUI\DebugGUI.cs">
+        <Link>Assets\DebugGUI\DebugGUI.cs</Link>
+      </Compile>
+      <Compile Include="..\Assets\DebugGUI\Examples\DebugGUIExamples.cs">
+        <Link>Assets\DebugGUI\Examples\DebugGUIExamples.cs</Link>
+      </Compile>
+      <Compile Include="..\Assets\Grapher\Channel.cs">
+        <Link>Assets\Grapher\Channel.cs</Link>
+      </Compile>
+      <Compile Include="..\Assets\Grapher\Example\DataProvider.cs">
+        <Link>Assets\Grapher\Example\DataProvider.cs</Link>
+      </Compile>
+      <Compile Include="..\Assets\Grapher\FileHandler.cs">
+        <Link>Assets\Grapher\FileHandler.cs</Link>
+      </Compile>
+      <Compile Include="..\Assets\Grapher\Grapher.cs">
+        <Link>Assets\Grapher\Grapher.cs</Link>
+      </Compile>
+      <Compile Include="..\Assets\Grapher\Grapher.Draw.cs">
+        <Link>Assets\Grapher\Grapher.Draw.cs</Link>
+      </Compile>
+      <Compile Include="..\Assets\Grapher\Grapher.Replay.cs">
+        <Link>Assets\Grapher\Grapher.Replay.cs</Link>
+      </Compile>
+      <Compile Include="..\Assets\Grapher\GraphSettings.cs">
+        <Link>Assets\Grapher\GraphSettings.cs</Link>
+      </Compile>
+      <Compile Include="..\Assets\Grapher\OpenInFileBrowser.cs">
+        <Link>Assets\Grapher\OpenInFileBrowser.cs</Link>
+      </Compile>
+      <Compile Include="..\Assets\Grapher\Sample.cs">
+        <Link>Assets\Grapher\Sample.cs</Link>
+      </Compile>
+      <Compile Include="..\Assets\Grapher\SettingsWindow.cs">
+        <Link>Assets\Grapher\SettingsWindow.cs</Link>
+      </Compile>
+      <Compile Include="..\Assets\Grapher\TimeKeeper.cs">
+        <Link>Assets\Grapher\TimeKeeper.cs</Link>
+      </Compile>
+      <Compile Include="..\Assets\Scripts\DungeonMaker\DrawGrid.cs">
+        <Link>Assets\Scripts\DungeonMaker\DrawGrid.cs</Link>
+      </Compile>
+      <Compile Include="..\Assets\Scripts\DungeonMaker\GridCreator.cs">
+        <Link>Assets\Scripts\DungeonMaker\GridCreator.cs</Link>
+      </Compile>
+      <Compile Include="..\Assets\Scripts\DungeonMaker\ResizeGrid.cs">
+        <Link>Assets\Scripts\DungeonMaker\ResizeGrid.cs</Link>
+      </Compile>
+      <Compile Include="..\Assets\Scripts\DungeonMaker\SetCanvasDefaults.cs">
+        <Link>Assets\Scripts\DungeonMaker\SetCanvasDefaults.cs</Link>
+      </Compile>
+      <Compile Include="..\Assets\Scripts\DungeonMaker\SlideInOut.cs">
+        <Link>Assets\Scripts\DungeonMaker\SlideInOut.cs</Link>
+      </Compile>
+      <Compile Include="..\Assets\Scripts\DungeonMaker\ToolType.cs">
+        <Link>Assets\Scripts\DungeonMaker\ToolType.cs</Link>
+      </Compile>
+      <Compile Include="..\Assets\Scripts\MainGame\Character\Camera\FollowCharacter.cs">
+        <Link>Assets\Scripts\MainGame\Character\Camera\FollowCharacter.cs</Link>
+      </Compile>
+      <Compile Include="..\Assets\Scripts\MainGame\Character\CharacterJump.cs">
+        <Link>Assets\Scripts\MainGame\Character\CharacterJump.cs</Link>
+      </Compile>
+      <Compile Include="..\Assets\Scripts\MainGame\Character\Movement\Interpolate.cs">
+        <Link>Assets\Scripts\MainGame\Character\Movement\Interpolate.cs</Link>
+      </Compile>
+      <Compile Include="..\Assets\Scripts\MainGame\Character\States\Idle.cs">
+        <Link>Assets\Scripts\MainGame\Character\States\Idle.cs</Link>
+      </Compile>
+      <Compile Include="..\Assets\Scripts\MainGame\Character\States\Kick.cs">
+        <Link>Assets\Scripts\MainGame\Character\States\Kick.cs</Link>
+      </Compile>
+      <Compile Include="..\Assets\Scripts\MainGame\Character\States\MOVE.cs">
+        <Link>Assets\Scripts\MainGame\Character\States\MOVE.cs</Link>
+      </Compile>
+      <Compile Include="..\Assets\Scripts\MainGame\GameManager.cs">
+        <Link>Assets\Scripts\MainGame\GameManager.cs</Link>
+      </Compile>
+      <Compile Include="..\Assets\Scripts\MainGame\ProceduralBushes\Inverse Kinematics\InverseKinematicBranchLimbCreator.cs">
+        <Link>Assets\Scripts\MainGame\ProceduralBushes\Inverse Kinematics\InverseKinematicBranchLimbCreator.cs</Link>
+      </Compile>
+      <Compile Include="..\Assets\Scripts\MainGame\ProceduralBushes\Inverse Kinematics\InverseKinematics.cs">
+        <Link>Assets\Scripts\MainGame\ProceduralBushes\Inverse Kinematics\InverseKinematics.cs</Link>
+      </Compile>
+      <Compile Include="..\Assets\Scripts\MainGame\ProceduralBushes\Inverse Kinematics\InverseKinematicUnit.cs">
+        <Link>Assets\Scripts\MainGame\ProceduralBushes\Inverse Kinematics\InverseKinematicUnit.cs</Link>
+      </Compile>
+      <Compile Include="..\Assets\Scripts\MainGame\ProceduralBushes\Inverse Kinematics\Limb.cs">
+        <Link>Assets\Scripts\MainGame\ProceduralBushes\Inverse Kinematics\Limb.cs</Link>
+      </Compile>
+      <Compile Include="..\Assets\Scripts\MainGame\ProceduralBushes\LSystem\GrammarGenerator.cs">
+        <Link>Assets\Scripts\MainGame\ProceduralBushes\LSystem\GrammarGenerator.cs</Link>
+      </Compile>
+      <Compile Include="..\Assets\Scripts\MainGame\ProceduralBushes\LSystem\GrammarNode.cs">
+        <Link>Assets\Scripts\MainGame\ProceduralBushes\LSystem\GrammarNode.cs</Link>
+      </Compile>
+      <Compile Include="..\Assets\Scripts\MainGame\ProceduralBushes\LSystem\LNode.cs">
+        <Link>Assets\Scripts\MainGame\ProceduralBushes\LSystem\LNode.cs</Link>
+      </Compile>
+      <Compile Include="..\Assets\Scripts\MainGame\ProceduralBushes\LSystem\LSystemGenerator.cs">
+        <Link>Assets\Scripts\MainGame\ProceduralBushes\LSystem\LSystemGenerator.cs</Link>
+      </Compile>
+      <Compile Include="..\Assets\Scripts\MainGame\ProceduralBushes\LSystem\LSystemRules.cs">
+        <Link>Assets\Scripts\MainGame\ProceduralBushes\LSystem\LSystemRules.cs</Link>
+      </Compile>
+      <Compile Include="..\Assets\Scripts\MainGame\ProceduralBushes\LSystem\NodeBehaviorGenerator.cs">
+        <Link>Assets\Scripts\MainGame\ProceduralBushes\LSystem\NodeBehaviorGenerator.cs</Link>
+      </Compile>
+      <Compile Include="..\Assets\Scripts\MainGame\ProceduralBushes\LSystem\Rule.cs">
+        <Link>Assets\Scripts\MainGame\ProceduralBushes\LSystem\Rule.cs</Link>
+      </Compile>
+      <Compile Include="..\Assets\Scripts\MainGame\ProceduralBushes\Mesh\Branch.cs">
+        <Link>Assets\Scripts\MainGame\ProceduralBushes\Mesh\Branch.cs</Link>
+      </Compile>
+      <Compile Include="..\Assets\Scripts\MainGame\ProceduralBushes\Mesh\Bush.cs">
+        <Link>Assets\Scripts\MainGame\ProceduralBushes\Mesh\Bush.cs</Link>
+      </Compile>
+      <Compile Include="..\Assets\Scripts\MainGame\ProceduralBushes\Mesh\BushCreator.cs">
+        <Link>Assets\Scripts\MainGame\ProceduralBushes\Mesh\BushCreator.cs</Link>
+      </Compile>
+      <Compile Include="..\Assets\Scripts\MainGame\ProceduralBushes\Mesh\BushMeshCreator.cs">
+        <Link>Assets\Scripts\MainGame\ProceduralBushes\Mesh\BushMeshCreator.cs</Link>
+      </Compile>
+      <Compile Include="..\Assets\Scripts\MainGame\Terrain\Chunk\ChunkBackgroundResizer.cs">
+        <Link>Assets\Scripts\MainGame\Terrain\Chunk\ChunkBackgroundResizer.cs</Link>
+      </Compile>
+      <Compile Include="..\Assets\Scripts\MainGame\Terrain\Chunk\ChunkManager.cs">
+        <Link>Assets\Scripts\MainGame\Terrain\Chunk\ChunkManager.cs</Link>
+      </Compile>
+      <Compile Include="..\Assets\Scripts\MainGame\Terrain\Chunk\ChunksManager.cs">
+        <Link>Assets\Scripts\MainGame\Terrain\Chunk\ChunksManager.cs</Link>
+      </Compile>
+      <Compile Include="..\Assets\Scripts\MainGame\Terrain\Chunk\ColliderCreator.cs">
+        <Link>Assets\Scripts\MainGame\Terrain\Chunk\ColliderCreator.cs</Link>
+      </Compile>
+      <Compile Include="..\Assets\Scripts\MainGame\Terrain\Generation\AdjacentDataCollector.cs">
+        <Link>Assets\Scripts\MainGame\Terrain\Generation\AdjacentDataCollector.cs</Link>
+      </Compile>
+      <Compile Include="..\Assets\Scripts\MainGame\Terrain\Generation\AdjacentType.cs">
+        <Link>Assets\Scripts\MainGame\Terrain\Generation\AdjacentType.cs</Link>
+      </Compile>
+      <Compile Include="..\Assets\Scripts\MainGame\Terrain\Generation\AutomataDebugRenderer.cs">
+        <Link>Assets\Scripts\MainGame\Terrain\Generation\AutomataDebugRenderer.cs</Link>
+      </Compile>
+      <Compile Include="..\Assets\Scripts\MainGame\Terrain\Generation\CellularAutomata.cs">
+        <Link>Assets\Scripts\MainGame\Terrain\Generation\CellularAutomata.cs</Link>
+      </Compile>
+      <Compile Include="..\Assets\Scripts\MainGame\Terrain\Generation\ControlNode.cs">
+        <Link>Assets\Scripts\MainGame\Terrain\Generation\ControlNode.cs</Link>
+      </Compile>
+      <Compile Include="..\Assets\Scripts\MainGame\Terrain\Generation\ControlNodeCreator.cs">
+        <Link>Assets\Scripts\MainGame\Terrain\Generation\ControlNodeCreator.cs</Link>
+      </Compile>
+      <Compile Include="..\Assets\Scripts\MainGame\Terrain\Generation\ExternalEdge.cs">
+        <Link>Assets\Scripts\MainGame\Terrain\Generation\ExternalEdge.cs</Link>
+      </Compile>
+      <Compile Include="..\Assets\Scripts\MainGame\Terrain\Generation\ExternalEdgeDetector.cs">
+        <Link>Assets\Scripts\MainGame\Terrain\Generation\ExternalEdgeDetector.cs</Link>
+      </Compile>
+      <Compile Include="..\Assets\Scripts\MainGame\Terrain\Generation\ExternalEdgeType.cs">
+        <Link>Assets\Scripts\MainGame\Terrain\Generation\ExternalEdgeType.cs</Link>
+      </Compile>
+      <Compile Include="..\Assets\Scripts\MainGame\Terrain\Generation\GenerationData.cs">
+        <Link>Assets\Scripts\MainGame\Terrain\Generation\GenerationData.cs</Link>
+      </Compile>
+      <Compile Include="..\Assets\Scripts\MainGame\Terrain\Generation\MeshGenerator.cs">
+        <Link>Assets\Scripts\MainGame\Terrain\Generation\MeshGenerator.cs</Link>
+      </Compile>
+      <Compile Include="..\Assets\Scripts\MainGame\Terrain\Generation\Node.cs">
+        <Link>Assets\Scripts\MainGame\Terrain\Generation\Node.cs</Link>
+      </Compile>
+      <Compile Include="..\Assets\Scripts\MainGame\Terrain\Generation\Square.cs">
+        <Link>Assets\Scripts\MainGame\Terrain\Generation\Square.cs</Link>
+      </Compile>
+      <Compile Include="..\Assets\Scripts\MainGame\Terrain\Generation\SquareConfig.cs">
+        <Link>Assets\Scripts\MainGame\Terrain\Generation\SquareConfig.cs</Link>
+      </Compile>
+      <Compile Include="..\Assets\Scripts\MainGame\Terrain\Generation\SquareConfiguration.cs">
+        <Link>Assets\Scripts\MainGame\Terrain\Generation\SquareConfiguration.cs</Link>
+      </Compile>
+      <Compile Include="..\Assets\Scripts\MainGame\Terrain\Generation\SquareCreator.cs">
+        <Link>Assets\Scripts\MainGame\Terrain\Generation\SquareCreator.cs</Link>
+      </Compile>
+      <Compile Include="..\Assets\Scripts\MainGame\Terrain\Generation\TerrainDestroyer.cs">
+        <Link>Assets\Scripts\MainGame\Terrain\Generation\TerrainDestroyer.cs</Link>
+      </Compile>
+      <Compile Include="..\Assets\Scripts\MainGame\Terrain\Generation\TerrainMatter.cs">
+        <Link>Assets\Scripts\MainGame\Terrain\Generation\TerrainMatter.cs</Link>
+      </Compile>
+      <Compile Include="..\Assets\Scripts\MainGame\Terrain\Generation\TerrainType.cs">
+        <Link>Assets\Scripts\MainGame\Terrain\Generation\TerrainType.cs</Link>
+      </Compile>
+      <Compile Include="..\Assets\Scripts\MainGame\Terrain\Matters\Matter.cs">
+        <Link>Assets\Scripts\MainGame\Terrain\Matters\Matter.cs</Link>
+      </Compile>
+      <Compile Include="..\Assets\Scripts\MainGame\Terrain\Matters\MatterCSVReader.cs">
+        <Link>Assets\Scripts\MainGame\Terrain\Matters\MatterCSVReader.cs</Link>
+      </Compile>
+      <Compile Include="..\Assets\Scripts\MainGame\Terrain\Mesh\MeshTriangle.cs">
+        <Link>Assets\Scripts\MainGame\Terrain\Mesh\MeshTriangle.cs</Link>
+      </Compile>
+      <Compile Include="..\Assets\Scripts\MainGame\Terrain\Mesh\MeshTriangleUVCoord.cs">
+        <Link>Assets\Scripts\MainGame\Terrain\Mesh\MeshTriangleUVCoord.cs</Link>
+      </Compile>
+      <Compile Include="..\Assets\Scripts\MainGame\Terrain\Mesh\MeshTriangleUVCoordMap.cs">
+        <Link>Assets\Scripts\MainGame\Terrain\Mesh\MeshTriangleUVCoordMap.cs</Link>
+      </Compile>
+      <Compile Include="..\Assets\Scripts\MainGame\Terrain\Mesh\TerrainUVMapper.cs">
+        <Link>Assets\Scripts\MainGame\Terrain\Mesh\TerrainUVMapper.cs</Link>
+      </Compile>
+      <Compile Include="..\Assets\Scripts\MainGame\Terrain\Mesh\Triangle.cs">
+        <Link>Assets\Scripts\MainGame\Terrain\Mesh\Triangle.cs</Link>
+      </Compile>
+      <Compile Include="..\Assets\Scripts\MainGame\Terrain\Mesh\TriangleType.cs">
+        <Link>Assets\Scripts\MainGame\Terrain\Mesh\TriangleType.cs</Link>
+      </Compile>
+      <Compile Include="..\Assets\Scripts\MainGame\Terrain\Mesh\Triangulator.cs">
+        <Link>Assets\Scripts\MainGame\Terrain\Mesh\Triangulator.cs</Link>
+      </Compile>
+      <Compile Include="..\Assets\Scripts\Utils\Bounds.cs">
+        <Link>Assets\Scripts\Utils\Bounds.cs</Link>
+      </Compile>
+      <Compile Include="..\Assets\Scripts\Utils\centerCamera.cs">
+        <Link>Assets\Scripts\Utils\centerCamera.cs</Link>
+      </Compile>
+      <Compile Include="..\Assets\Scripts\Utils\Margin.cs">
+        <Link>Assets\Scripts\Utils\Margin.cs</Link>
+      </Compile>
+      <Compile Include="..\Assets\Scripts\Utils\Optional.cs">
+        <Link>Assets\Scripts\Utils\Optional.cs</Link>
+      </Compile>
+      <Compile Include="..\Assets\UltimateVertexColorShaders\Shaders\UVCS_StandardShaderGUI.cs">
+        <Link>Assets\UltimateVertexColorShaders\Shaders\UVCS_StandardShaderGUI.cs</Link>
+      </Compile>
+      <Reference Include="Unity.Timeline.Editor">
+        <HintPath>C:/Users/jacob/Projects/Magic Game/Library/ScriptAssemblies/Unity.Timeline.Editor.dll</HintPath>
+      </Reference>
+      <Reference Include="Unity.2D.Animation.Runtime">
+        <HintPath>C:/Users/jacob/Projects/Magic Game/Library/ScriptAssemblies/Unity.2D.Animation.Runtime.dll</HintPath>
+      </Reference>
+      <Reference Include="Unity.VSCode.Editor">
+        <HintPath>C:/Users/jacob/Projects/Magic Game/Library/ScriptAssemblies/Unity.VSCode.Editor.dll</HintPath>
+      </Reference>
+      <Reference Include="Unity.Recorder.Editor">
+        <HintPath>C:/Users/jacob/Projects/Magic Game/Library/ScriptAssemblies/Unity.Recorder.Editor.dll</HintPath>
+      </Reference>
+      <Reference Include="Unity.TextMeshPro.Editor">
+        <HintPath>C:/Users/jacob/Projects/Magic Game/Library/ScriptAssemblies/Unity.TextMeshPro.Editor.dll</HintPath>
+      </Reference>
+      <Reference Include="Unity.2D.IK.Editor">
+        <HintPath>C:/Users/jacob/Projects/Magic Game/Library/ScriptAssemblies/Unity.2D.IK.Editor.dll</HintPath>
+      </Reference>
+      <Reference Include="Unity.Recorder">
+        <HintPath>C:/Users/jacob/Projects/Magic Game/Library/ScriptAssemblies/Unity.Recorder.dll</HintPath>
+      </Reference>
+      <Reference Include="Unity.2D.IK.Runtime">
+        <HintPath>C:/Users/jacob/Projects/Magic Game/Library/ScriptAssemblies/Unity.2D.IK.Runtime.dll</HintPath>
+      </Reference>
+      <Reference Include="UnityEngine.UI">
+        <HintPath>C:/Users/jacob/Projects/Magic Game/Library/ScriptAssemblies/UnityEngine.UI.dll</HintPath>
+      </Reference>
+      <Reference Include="Unity.Timeline">
+        <HintPath>C:/Users/jacob/Projects/Magic Game/Library/ScriptAssemblies/Unity.Timeline.dll</HintPath>
+      </Reference>
+      <Reference Include="Unity.2D.Animation.Triangle.Runtime">
+        <HintPath>C:/Users/jacob/Projects/Magic Game/Library/ScriptAssemblies/Unity.2D.Animation.Triangle.Runtime.dll</HintPath>
+      </Reference>
+      <Reference Include="Unity.Rider.Editor">
+        <HintPath>C:/Users/jacob/Projects/Magic Game/Library/ScriptAssemblies/Unity.Rider.Editor.dll</HintPath>
+      </Reference>
+      <Reference Include="Unity.Recorder.Base">
+        <HintPath>C:/Users/jacob/Projects/Magic Game/Library/ScriptAssemblies/Unity.Recorder.Base.dll</HintPath>
+      </Reference>
+      <Reference Include="Unity.Mathematics">
+        <HintPath>C:/Users/jacob/Projects/Magic Game/Library/ScriptAssemblies/Unity.Mathematics.dll</HintPath>
+      </Reference>
+      <Reference Include="Unity.InternalAPIEngineBridge.001">
+        <HintPath>C:/Users/jacob/Projects/Magic Game/Library/ScriptAssemblies/Unity.InternalAPIEngineBridge.001.dll</HintPath>
+      </Reference>
+      <Reference Include="Unity.2D.Sprite.Editor">
+        <HintPath>C:/Users/jacob/Projects/Magic Game/Library/ScriptAssemblies/Unity.2D.Sprite.Editor.dll</HintPath>
+      </Reference>
+      <Reference Include="Unity.2D.Common.Runtime">
+        <HintPath>C:/Users/jacob/Projects/Magic Game/Library/ScriptAssemblies/Unity.2D.Common.Runtime.dll</HintPath>
+      </Reference>
+      <Reference Include="Unity.2D.Tilemap.Editor">
+        <HintPath>C:/Users/jacob/Projects/Magic Game/Library/ScriptAssemblies/Unity.2D.Tilemap.Editor.dll</HintPath>
+      </Reference>
+      <Reference Include="Unity.2D.Animation.Editor">
+        <HintPath>C:/Users/jacob/Projects/Magic Game/Library/ScriptAssemblies/Unity.2D.Animation.Editor.dll</HintPath>
+      </Reference>
+      <Reference Include="Unity.VisualStudio.Editor">
+        <HintPath>C:/Users/jacob/Projects/Magic Game/Library/ScriptAssemblies/Unity.VisualStudio.Editor.dll</HintPath>
+      </Reference>
+      <Reference Include="Unity.Mathematics.Editor">
+        <HintPath>C:/Users/jacob/Projects/Magic Game/Library/ScriptAssemblies/Unity.Mathematics.Editor.dll</HintPath>
+      </Reference>
+      <Reference Include="Unity.TextMeshPro">
+        <HintPath>C:/Users/jacob/Projects/Magic Game/Library/ScriptAssemblies/Unity.TextMeshPro.dll</HintPath>
+      </Reference>
+      <Reference Include="Unity.2D.Common.Editor">
+        <HintPath>C:/Users/jacob/Projects/Magic Game/Library/ScriptAssemblies/Unity.2D.Common.Editor.dll</HintPath>
+      </Reference>
+      <Reference Include="Unity.InternalAPIEditorBridge.001">
+        <HintPath>C:/Users/jacob/Projects/Magic Game/Library/ScriptAssemblies/Unity.InternalAPIEditorBridge.001.dll</HintPath>
+      </Reference>
+      <Reference Include="UnityEditor.UI">
+        <HintPath>C:/Users/jacob/Projects/Magic Game/Library/ScriptAssemblies/UnityEditor.UI.dll</HintPath>
+      </Reference>
+      <Reference Include="UnityEngine">
+        <HintPath>C:/Program Files/Unity/Hub/Editor/2020.1.9f1/Editor/Data/Managed/UnityEngine/UnityEngine.dll</HintPath>
+      </Reference>
+      <Reference Include="UnityEngine.AIModule">
+        <HintPath>C:/Program Files/Unity/Hub/Editor/2020.1.9f1/Editor/Data/Managed/UnityEngine/UnityEngine.AIModule.dll</HintPath>
+      </Reference>
+      <Reference Include="UnityEngine.ARModule">
+        <HintPath>C:/Program Files/Unity/Hub/Editor/2020.1.9f1/Editor/Data/Managed/UnityEngine/UnityEngine.ARModule.dll</HintPath>
+      </Reference>
+      <Reference Include="UnityEngine.AccessibilityModule">
+        <HintPath>C:/Program Files/Unity/Hub/Editor/2020.1.9f1/Editor/Data/Managed/UnityEngine/UnityEngine.AccessibilityModule.dll</HintPath>
+      </Reference>
+      <Reference Include="UnityEngine.AndroidJNIModule">
+        <HintPath>C:/Program Files/Unity/Hub/Editor/2020.1.9f1/Editor/Data/Managed/UnityEngine/UnityEngine.AndroidJNIModule.dll</HintPath>
+      </Reference>
+      <Reference Include="UnityEngine.AnimationModule">
+        <HintPath>C:/Program Files/Unity/Hub/Editor/2020.1.9f1/Editor/Data/Managed/UnityEngine/UnityEngine.AnimationModule.dll</HintPath>
+      </Reference>
+      <Reference Include="UnityEngine.AssetBundleModule">
+        <HintPath>C:/Program Files/Unity/Hub/Editor/2020.1.9f1/Editor/Data/Managed/UnityEngine/UnityEngine.AssetBundleModule.dll</HintPath>
+      </Reference>
+      <Reference Include="UnityEngine.AudioModule">
+        <HintPath>C:/Program Files/Unity/Hub/Editor/2020.1.9f1/Editor/Data/Managed/UnityEngine/UnityEngine.AudioModule.dll</HintPath>
+      </Reference>
+      <Reference Include="UnityEngine.ClothModule">
+        <HintPath>C:/Program Files/Unity/Hub/Editor/2020.1.9f1/Editor/Data/Managed/UnityEngine/UnityEngine.ClothModule.dll</HintPath>
+      </Reference>
+      <Reference Include="UnityEngine.ClusterInputModule">
+        <HintPath>C:/Program Files/Unity/Hub/Editor/2020.1.9f1/Editor/Data/Managed/UnityEngine/UnityEngine.ClusterInputModule.dll</HintPath>
+      </Reference>
+      <Reference Include="UnityEngine.ClusterRendererModule">
+        <HintPath>C:/Program Files/Unity/Hub/Editor/2020.1.9f1/Editor/Data/Managed/UnityEngine/UnityEngine.ClusterRendererModule.dll</HintPath>
+      </Reference>
+      <Reference Include="UnityEngine.CoreModule">
+        <HintPath>C:/Program Files/Unity/Hub/Editor/2020.1.9f1/Editor/Data/Managed/UnityEngine/UnityEngine.CoreModule.dll</HintPath>
+      </Reference>
+      <Reference Include="UnityEngine.CrashReportingModule">
+        <HintPath>C:/Program Files/Unity/Hub/Editor/2020.1.9f1/Editor/Data/Managed/UnityEngine/UnityEngine.CrashReportingModule.dll</HintPath>
+      </Reference>
+      <Reference Include="UnityEngine.DSPGraphModule">
+        <HintPath>C:/Program Files/Unity/Hub/Editor/2020.1.9f1/Editor/Data/Managed/UnityEngine/UnityEngine.DSPGraphModule.dll</HintPath>
+      </Reference>
+      <Reference Include="UnityEngine.DirectorModule">
+        <HintPath>C:/Program Files/Unity/Hub/Editor/2020.1.9f1/Editor/Data/Managed/UnityEngine/UnityEngine.DirectorModule.dll</HintPath>
+      </Reference>
+      <Reference Include="UnityEngine.GameCenterModule">
+        <HintPath>C:/Program Files/Unity/Hub/Editor/2020.1.9f1/Editor/Data/Managed/UnityEngine/UnityEngine.GameCenterModule.dll</HintPath>
+      </Reference>
+      <Reference Include="UnityEngine.GridModule">
+        <HintPath>C:/Program Files/Unity/Hub/Editor/2020.1.9f1/Editor/Data/Managed/UnityEngine/UnityEngine.GridModule.dll</HintPath>
+      </Reference>
+      <Reference Include="UnityEngine.HotReloadModule">
+        <HintPath>C:/Program Files/Unity/Hub/Editor/2020.1.9f1/Editor/Data/Managed/UnityEngine/UnityEngine.HotReloadModule.dll</HintPath>
+      </Reference>
+      <Reference Include="UnityEngine.IMGUIModule">
+        <HintPath>C:/Program Files/Unity/Hub/Editor/2020.1.9f1/Editor/Data/Managed/UnityEngine/UnityEngine.IMGUIModule.dll</HintPath>
+      </Reference>
+      <Reference Include="UnityEngine.ImageConversionModule">
+        <HintPath>C:/Program Files/Unity/Hub/Editor/2020.1.9f1/Editor/Data/Managed/UnityEngine/UnityEngine.ImageConversionModule.dll</HintPath>
+      </Reference>
+      <Reference Include="UnityEngine.InputModule">
+        <HintPath>C:/Program Files/Unity/Hub/Editor/2020.1.9f1/Editor/Data/Managed/UnityEngine/UnityEngine.InputModule.dll</HintPath>
+      </Reference>
+      <Reference Include="UnityEngine.InputLegacyModule">
+        <HintPath>C:/Program Files/Unity/Hub/Editor/2020.1.9f1/Editor/Data/Managed/UnityEngine/UnityEngine.InputLegacyModule.dll</HintPath>
+      </Reference>
+      <Reference Include="UnityEngine.JSONSerializeModule">
+        <HintPath>C:/Program Files/Unity/Hub/Editor/2020.1.9f1/Editor/Data/Managed/UnityEngine/UnityEngine.JSONSerializeModule.dll</HintPath>
+      </Reference>
+      <Reference Include="UnityEngine.LocalizationModule">
+        <HintPath>C:/Program Files/Unity/Hub/Editor/2020.1.9f1/Editor/Data/Managed/UnityEngine/UnityEngine.LocalizationModule.dll</HintPath>
+      </Reference>
+      <Reference Include="UnityEngine.ParticleSystemModule">
+        <HintPath>C:/Program Files/Unity/Hub/Editor/2020.1.9f1/Editor/Data/Managed/UnityEngine/UnityEngine.ParticleSystemModule.dll</HintPath>
+      </Reference>
+      <Reference Include="UnityEngine.PerformanceReportingModule">
+        <HintPath>C:/Program Files/Unity/Hub/Editor/2020.1.9f1/Editor/Data/Managed/UnityEngine/UnityEngine.PerformanceReportingModule.dll</HintPath>
+      </Reference>
+      <Reference Include="UnityEngine.PhysicsModule">
+        <HintPath>C:/Program Files/Unity/Hub/Editor/2020.1.9f1/Editor/Data/Managed/UnityEngine/UnityEngine.PhysicsModule.dll</HintPath>
+      </Reference>
+      <Reference Include="UnityEngine.Physics2DModule">
+        <HintPath>C:/Program Files/Unity/Hub/Editor/2020.1.9f1/Editor/Data/Managed/UnityEngine/UnityEngine.Physics2DModule.dll</HintPath>
+      </Reference>
+      <Reference Include="UnityEngine.ProfilerModule">
+        <HintPath>C:/Program Files/Unity/Hub/Editor/2020.1.9f1/Editor/Data/Managed/UnityEngine/UnityEngine.ProfilerModule.dll</HintPath>
+      </Reference>
+      <Reference Include="UnityEngine.ScreenCaptureModule">
+        <HintPath>C:/Program Files/Unity/Hub/Editor/2020.1.9f1/Editor/Data/Managed/UnityEngine/UnityEngine.ScreenCaptureModule.dll</HintPath>
+      </Reference>
+      <Reference Include="UnityEngine.SharedInternalsModule">
+        <HintPath>C:/Program Files/Unity/Hub/Editor/2020.1.9f1/Editor/Data/Managed/UnityEngine/UnityEngine.SharedInternalsModule.dll</HintPath>
+      </Reference>
+      <Reference Include="UnityEngine.SpriteMaskModule">
+        <HintPath>C:/Program Files/Unity/Hub/Editor/2020.1.9f1/Editor/Data/Managed/UnityEngine/UnityEngine.SpriteMaskModule.dll</HintPath>
+      </Reference>
+      <Reference Include="UnityEngine.SpriteShapeModule">
+        <HintPath>C:/Program Files/Unity/Hub/Editor/2020.1.9f1/Editor/Data/Managed/UnityEngine/UnityEngine.SpriteShapeModule.dll</HintPath>
+      </Reference>
+      <Reference Include="UnityEngine.StreamingModule">
+        <HintPath>C:/Program Files/Unity/Hub/Editor/2020.1.9f1/Editor/Data/Managed/UnityEngine/UnityEngine.StreamingModule.dll</HintPath>
+      </Reference>
+      <Reference Include="UnityEngine.SubstanceModule">
+        <HintPath>C:/Program Files/Unity/Hub/Editor/2020.1.9f1/Editor/Data/Managed/UnityEngine/UnityEngine.SubstanceModule.dll</HintPath>
+      </Reference>
+      <Reference Include="UnityEngine.SubsystemsModule">
+        <HintPath>C:/Program Files/Unity/Hub/Editor/2020.1.9f1/Editor/Data/Managed/UnityEngine/UnityEngine.SubsystemsModule.dll</HintPath>
+      </Reference>
+      <Reference Include="UnityEngine.TLSModule">
+        <HintPath>C:/Program Files/Unity/Hub/Editor/2020.1.9f1/Editor/Data/Managed/UnityEngine/UnityEngine.TLSModule.dll</HintPath>
+      </Reference>
+      <Reference Include="UnityEngine.TerrainModule">
+        <HintPath>C:/Program Files/Unity/Hub/Editor/2020.1.9f1/Editor/Data/Managed/UnityEngine/UnityEngine.TerrainModule.dll</HintPath>
+      </Reference>
+      <Reference Include="UnityEngine.TerrainPhysicsModule">
+        <HintPath>C:/Program Files/Unity/Hub/Editor/2020.1.9f1/Editor/Data/Managed/UnityEngine/UnityEngine.TerrainPhysicsModule.dll</HintPath>
+      </Reference>
+      <Reference Include="UnityEngine.TextCoreModule">
+        <HintPath>C:/Program Files/Unity/Hub/Editor/2020.1.9f1/Editor/Data/Managed/UnityEngine/UnityEngine.TextCoreModule.dll</HintPath>
+      </Reference>
+      <Reference Include="UnityEngine.TextRenderingModule">
+        <HintPath>C:/Program Files/Unity/Hub/Editor/2020.1.9f1/Editor/Data/Managed/UnityEngine/UnityEngine.TextRenderingModule.dll</HintPath>
+      </Reference>
+      <Reference Include="UnityEngine.TilemapModule">
+        <HintPath>C:/Program Files/Unity/Hub/Editor/2020.1.9f1/Editor/Data/Managed/UnityEngine/UnityEngine.TilemapModule.dll</HintPath>
+      </Reference>
+      <Reference Include="UnityEngine.UIModule">
+        <HintPath>C:/Program Files/Unity/Hub/Editor/2020.1.9f1/Editor/Data/Managed/UnityEngine/UnityEngine.UIModule.dll</HintPath>
+      </Reference>
+      <Reference Include="UnityEngine.UIElementsModule">
+        <HintPath>C:/Program Files/Unity/Hub/Editor/2020.1.9f1/Editor/Data/Managed/UnityEngine/UnityEngine.UIElementsModule.dll</HintPath>
+      </Reference>
+      <Reference Include="UnityEngine.UIElementsNativeModule">
+        <HintPath>C:/Program Files/Unity/Hub/Editor/2020.1.9f1/Editor/Data/Managed/UnityEngine/UnityEngine.UIElementsNativeModule.dll</HintPath>
+      </Reference>
+      <Reference Include="UnityEngine.UNETModule">
+        <HintPath>C:/Program Files/Unity/Hub/Editor/2020.1.9f1/Editor/Data/Managed/UnityEngine/UnityEngine.UNETModule.dll</HintPath>
+      </Reference>
+      <Reference Include="UnityEngine.UmbraModule">
+        <HintPath>C:/Program Files/Unity/Hub/Editor/2020.1.9f1/Editor/Data/Managed/UnityEngine/UnityEngine.UmbraModule.dll</HintPath>
+      </Reference>
+      <Reference Include="UnityEngine.UnityAnalyticsModule">
+        <HintPath>C:/Program Files/Unity/Hub/Editor/2020.1.9f1/Editor/Data/Managed/UnityEngine/UnityEngine.UnityAnalyticsModule.dll</HintPath>
+      </Reference>
+      <Reference Include="UnityEngine.UnityConnectModule">
+        <HintPath>C:/Program Files/Unity/Hub/Editor/2020.1.9f1/Editor/Data/Managed/UnityEngine/UnityEngine.UnityConnectModule.dll</HintPath>
+      </Reference>
+      <Reference Include="UnityEngine.UnityTestProtocolModule">
+        <HintPath>C:/Program Files/Unity/Hub/Editor/2020.1.9f1/Editor/Data/Managed/UnityEngine/UnityEngine.UnityTestProtocolModule.dll</HintPath>
+      </Reference>
+      <Reference Include="UnityEngine.UnityWebRequestModule">
+        <HintPath>C:/Program Files/Unity/Hub/Editor/2020.1.9f1/Editor/Data/Managed/UnityEngine/UnityEngine.UnityWebRequestModule.dll</HintPath>
+      </Reference>
+      <Reference Include="UnityEngine.UnityWebRequestAssetBundleModule">
+        <HintPath>C:/Program Files/Unity/Hub/Editor/2020.1.9f1/Editor/Data/Managed/UnityEngine/UnityEngine.UnityWebRequestAssetBundleModule.dll</HintPath>
+      </Reference>
+      <Reference Include="UnityEngine.UnityWebRequestAudioModule">
+        <HintPath>C:/Program Files/Unity/Hub/Editor/2020.1.9f1/Editor/Data/Managed/UnityEngine/UnityEngine.UnityWebRequestAudioModule.dll</HintPath>
+      </Reference>
+      <Reference Include="UnityEngine.UnityWebRequestTextureModule">
+        <HintPath>C:/Program Files/Unity/Hub/Editor/2020.1.9f1/Editor/Data/Managed/UnityEngine/UnityEngine.UnityWebRequestTextureModule.dll</HintPath>
+      </Reference>
+      <Reference Include="UnityEngine.UnityWebRequestWWWModule">
+        <HintPath>C:/Program Files/Unity/Hub/Editor/2020.1.9f1/Editor/Data/Managed/UnityEngine/UnityEngine.UnityWebRequestWWWModule.dll</HintPath>
+      </Reference>
+      <Reference Include="UnityEngine.VFXModule">
+        <HintPath>C:/Program Files/Unity/Hub/Editor/2020.1.9f1/Editor/Data/Managed/UnityEngine/UnityEngine.VFXModule.dll</HintPath>
+      </Reference>
+      <Reference Include="UnityEngine.VRModule">
+        <HintPath>C:/Program Files/Unity/Hub/Editor/2020.1.9f1/Editor/Data/Managed/UnityEngine/UnityEngine.VRModule.dll</HintPath>
+      </Reference>
+      <Reference Include="UnityEngine.VehiclesModule">
+        <HintPath>C:/Program Files/Unity/Hub/Editor/2020.1.9f1/Editor/Data/Managed/UnityEngine/UnityEngine.VehiclesModule.dll</HintPath>
+      </Reference>
+      <Reference Include="UnityEngine.VideoModule">
+        <HintPath>C:/Program Files/Unity/Hub/Editor/2020.1.9f1/Editor/Data/Managed/UnityEngine/UnityEngine.VideoModule.dll</HintPath>
+      </Reference>
+      <Reference Include="UnityEngine.VirtualTexturingModule">
+        <HintPath>C:/Program Files/Unity/Hub/Editor/2020.1.9f1/Editor/Data/Managed/UnityEngine/UnityEngine.VirtualTexturingModule.dll</HintPath>
+      </Reference>
+      <Reference Include="UnityEngine.WindModule">
+        <HintPath>C:/Program Files/Unity/Hub/Editor/2020.1.9f1/Editor/Data/Managed/UnityEngine/UnityEngine.WindModule.dll</HintPath>
+      </Reference>
+      <Reference Include="UnityEngine.XRModule">
+        <HintPath>C:/Program Files/Unity/Hub/Editor/2020.1.9f1/Editor/Data/Managed/UnityEngine/UnityEngine.XRModule.dll</HintPath>
+      </Reference>
+      <Reference Include="UnityEditor">
+        <HintPath>C:/Program Files/Unity/Hub/Editor/2020.1.9f1/Editor/Data/Managed/UnityEditor.dll</HintPath>
+      </Reference>
+    </ItemGroup>
+
+</Project>
